@@ -8,10 +8,10 @@ const LettersDisplay = () => {
     <div>
       <h1>
         {string.map((letter, index) => {
-          if (index !== 0 ) {
-            return <> / {letter}</>;
+          if (index !== 0) {
+            return <span key={index}> / {letter}</span>;
           }
-          return <>{letter}</>;
+          return <span key={index}>{letter}</span>;
         })}
       </h1>
       <NumbersInput {...{ setString }} />
